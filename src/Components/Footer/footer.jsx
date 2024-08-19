@@ -1,3 +1,7 @@
 export function Footer() {
-  return;
+  return (
+    <>
+    <p>Built with React</p>
+    </>
+  )
 }

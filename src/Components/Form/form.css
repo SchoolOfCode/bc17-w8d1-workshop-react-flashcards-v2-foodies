@@ -1,0 +1,8 @@
+.inputBox {
+    background-color: rgb(210, 27, 27);
+    border-radius: 0.5rem;
+}
+
+.qLabel .aLabel {
+margin-right: 2rem;
+}

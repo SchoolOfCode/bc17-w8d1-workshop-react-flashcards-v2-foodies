@@ -10,3 +10,8 @@
 8. each flashcard needs own state to track open/closed status
 9. form needs to use setter state function to add cards to list
 10.
+
+1. Create seperate file for the data
+2. Create an array in the file
+3. Make the array an array object
+4. Make the prop keys 

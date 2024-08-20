@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function Flashcard(props) {
   return (
     <>
@@ -8,12 +10,18 @@ export function Flashcard(props) {
   );
 }
 
-export function FlashcardData() {
-  return (
-    <>
-      <Flashcard closeButton="dgsd" emoji="🤔" questionText="What is React?" />
-      <Flashcard closeButton="dgsd" emoji="🤔" questionText="What is React?" />
-      <Flashcard closeButton="dgsd" emoji="🤔" questionText="What is React?" />
-    </>
-  );
-}
+
+
+export function FlashcardData() { 
+  const [ flashcardArray, setFlashcardArray ] = useState([
+  { closeButton: "dgsd", emoji: "🤔", questionText: "1" },
+  { closeButton: "dgsd", emoji: "🤔", questionText: "2" },
+  { closeButton: "dgsd", emoji: "🤔", questionText: "3" },
+])
+return (
+        <section> 
+          { flashcardArray.map((card) => {
+            return <article>{card.closeButton} {card.emoji} {card.questionText}</article>
+          })}
+        </section>
+        )}
